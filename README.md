@@ -1,4 +1,4 @@
-# Наработки по postgreSQL
+# Наработки в postgreSQL
 
 
 
