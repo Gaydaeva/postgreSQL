@@ -56,7 +56,7 @@ FROM customers
 						WHERE customer_id = customers.customer_id
 				 		AND order_date BETWEEN '1995-02-01' AND '1995-02-15') -- таких заказчиков не было
 
--- Выбрать товары, которые не покупались в период 1 февраля и 15 февраля 1995 года
+-- Найти товары, которые не покупались в период 1 февраля и 15 февраля 1995 года
 
 SELECT product_name
 FROM products
