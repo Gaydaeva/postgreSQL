@@ -1,10 +1,11 @@
 -- от каких поставщиков товар
+
 SELECT product_name, suppliers.company_name, units_in_stock
 FROM products
 	INNER JOIN suppliers ON products.supplier_id = suppliers.supplier_id
 		ORDER BY units_in_stock DESC;
 
---сумма товаров по категориям
+-- сумма товаров по категориям
 
 SELECT category_name, SUM(units_in_stock)
 FROM products
@@ -13,7 +14,7 @@ FROM products
 			ORDER BY SUM(units_in_stock) DESC
 				LIMIT 5;
 
---6 категорий, в которых есть товар на продажу свыше 5000 у.е.
+-- 6 категорий, в которых есть товар на продажу свыше 5000 у.е.
 
 SELECT category_name, SUM(unit_price * units_in_stock)
 FROM products
