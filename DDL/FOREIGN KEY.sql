@@ -6,7 +6,7 @@ DROP TABLE book
 
 CREATE TABLE publisher
 (
-	publisher_id int, --лучше указывать serial, чтобы вручную не прописывать id
+	publisher_id int, --лучше указывать serial, чтобы вручную не прописывать id (в старых версиях postgreSQL)
 	publisher_name varchar(128) NOT NULL,
 	address text,
 	
